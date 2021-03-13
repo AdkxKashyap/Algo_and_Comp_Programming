@@ -1,0 +1,147 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch PalindromePermutation",
+            "request": "launch",
+            "mainClass": "PalindromePermutation",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringPermutation",
+            "request": "launch",
+            "mainClass": "StringPermutation",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch NextPermutation",
+            "request": "launch",
+            "mainClass": "NextPermutation",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MeetingRooms1",
+            "request": "launch",
+            "mainClass": "MeetingRooms1",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountingBits",
+            "request": "launch",
+            "mainClass": "CountingBits",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairs",
+            "request": "launch",
+            "mainClass": "ClimbStairs",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecodeWays",
+            "request": "launch",
+            "mainClass": "DecodeWays",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch HouseRobber2",
+            "request": "launch",
+            "mainClass": "HouseRobber2",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestIncreasingSubseq",
+            "request": "launch",
+            "mainClass": "LongestIncreasingSubseq",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSubArray",
+            "request": "launch",
+            "mainClass": "MaxSubArray",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinCostForTickets",
+            "request": "launch",
+            "mainClass": "MinCostForTickets",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch RegExMatching",
+            "request": "launch",
+            "mainClass": "RegExMatching",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaysToMakeFair",
+            "request": "launch",
+            "mainClass": "WaysToMakeFair",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch WordBreak",
+            "request": "launch",
+            "mainClass": "WordBreak",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch lc1130",
+            "request": "launch",
+            "mainClass": "lc1130",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch lc1277",
+            "request": "launch",
+            "mainClass": "lc1277",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch lc931",
+            "request": "launch",
+            "mainClass": "lc931",
+            "projectName": "DS practice_e1207f5a"
+        },
+        {
+            "type": "java",
+            "name": "Launch playground",
+            "request": "launch",
+            "mainClass": "playground",
+            "projectName": "DS practice_e1207f5a"
+        }
+    ]
+}

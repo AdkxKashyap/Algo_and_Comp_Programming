@@ -38,4 +38,8 @@
 // console.log(Infinity)
 // // console.log(map.size)
 
-console.log((1<<4))
+var testf=()=>{
+    return [[12]]
+}
+var arr=testf()
+for(let i of arr)console.log(i);
