@@ -21,7 +21,7 @@ public class playground {
         // for(int i:arr)System.out.println(i);
         // System.out.println(arr.length);
         // System.out.println(arr[arr.length-1]);
-        Character a='a';
-        System.out.println(a+'a');
+        // Character a='a';
+        System.out.println('a'+1);
     }
   }

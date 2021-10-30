@@ -15,7 +15,7 @@ public class Permutations {
                 list.add(delItem);
             }
             ans.addAll(tmpList);
-            nums[nums.length]=
+            nums[nums.length]=delItem;
         }
         return ans;
     }
