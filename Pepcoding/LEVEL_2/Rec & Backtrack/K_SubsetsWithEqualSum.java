@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-
+// ALso see leetcode 698 - dp problem
 public class K_SubsetsWithEqualSum {
 
 //ssf - subsets so far

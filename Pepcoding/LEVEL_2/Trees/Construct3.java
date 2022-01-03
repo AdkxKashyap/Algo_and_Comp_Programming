@@ -15,7 +15,13 @@ public class Construct3 {
         }
     }
     public static TreeNode construct(int[] pre, int[] post, int preSt, int preEnd, int posSt, int posEnd ) {
-      //***why we need both equals and this base case - dry run for {1,2}, {2, 1}.Also pre order and post can give two diff trees.but this algo gives unique res.dry run - [1,2,3] [3,2,1]
+      /**  ***why we need both equals and this base case - dry run for {1,2}, {2, 1}.Also pre order and post can give two diff trees.but this algo gives unique res.dry run - [1,2,3] [3,2,1] - 1
+       *                                                                                          /
+       *                                                                                         2
+       *                                                                                        /
+       *                                                                                       3  
+      */
+                                                                                                                                                               
       if(preSt > preEnd) return null;
       int rootVal = pre[preSt];
       

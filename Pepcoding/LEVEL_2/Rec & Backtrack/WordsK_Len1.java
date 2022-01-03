@@ -1,9 +1,11 @@
 import java.io.*;
 import java.util.*;
-//**This is permutation. Also see KWords select,whic is combination */
+/**This is permutation. Also see KWords select,whic is combination 
+ * Duplicates Not Allowed
+ * level - char, options = box**/
 public class WordsK_Len1 {
 
- 
+ //
     public static void find(String ustr, Character[] slots, int ssf, int i) {
         
         if(i == ustr.length()) {
@@ -17,6 +19,7 @@ public class WordsK_Len1 {
             return;
         }
         char ch = ustr.charAt(i);
+        //yes call
         for(int s = 0; s < slots.length; s++) {
             if(slots[s] == null) {
                 slots[s] = ch;
@@ -24,6 +27,7 @@ public class WordsK_Len1 {
                 slots[s] = null;
             }
         }
+        //no call
         find(ustr, slots, ssf, i + 1);
     }
   public static void main(String[] args) throws Exception {

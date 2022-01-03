@@ -3,7 +3,8 @@ import java.util.*;
 
 public class WordsK_Len3 {
 
-  //**lao - last occurance of character, cc - current char, ssf -string so far */
+  /**lao - last occurance of character, cc - current char, ssf -string so far 
+   * Duplicates Allowed**/
   public static void find(String str, int cc, int ssf, int ts,  HashMap<Character, Integer> lao, Character[] slots) {
     if(cc == str.length()) {
       if(ssf == ts) {

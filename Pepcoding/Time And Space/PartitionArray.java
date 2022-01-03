@@ -9,7 +9,7 @@ public class PartitionArray {
     int j = arr.length;
     while(i <= j) {
       if(arr[i] == pivot) {
-        i++
+        i++;
       }
       if(arr[i] > pivot) {
         swap(arr, i, j);

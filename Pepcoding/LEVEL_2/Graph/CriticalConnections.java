@@ -42,11 +42,13 @@ class CriticalConnections {
               parent[nbr] = src;
               dfs(graph, nbr);
               reach[src] = Math.min(reach[src], reach[nbr]);
+              //no need of count variable here since we are not checking equality of reach
               if(reach[nbr] > disc[src]) {
-                  List<Integer> res= new ArrayList<>();
-                  res.add(src);
-                  res.add(nbr);
-                  cp.add(res);
+                //   List<Integer> res= new ArrayList<>();
+                //   res.add(src);
+                //   res.add(nbr);
+                //   cp.add(res);
+                cp.add(new ArrayList<>(Arrays.asList(src, nbr)));
               }
           }
     }

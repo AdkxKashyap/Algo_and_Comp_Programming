@@ -28,7 +28,7 @@ public class K_WordsSelec1 {
       System.out.println(asf);
       return;
     }
-      //level->char, options->box
+      //level->box, options->char
       
     for(int i = chi + 1; i < ustr.length(); i++) {
       char ch = ustr.charAt(i);

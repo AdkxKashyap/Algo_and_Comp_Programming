@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class WordsK_Len2 {
-  /**level -> box, options -> items
+  /** Duplicates Not Allowed
+   * level -> box, options -> items
    * cs - cur slot, ts - total slots **/
   public static void find(String ustr, HashSet<Character> visited, int cs, int ts, String asf) {
     if(cs == ts) {

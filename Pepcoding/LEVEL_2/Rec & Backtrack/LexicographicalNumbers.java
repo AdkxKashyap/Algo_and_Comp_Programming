@@ -7,7 +7,7 @@ public class LexicographicalNumbers {
       
       System.out.println(val);  
     for(int i = 0; i < 10; i++) {
-        int num = 10 * val + i;  
+        int num = val * 10 + i;  
         print(num, n);
     }
   }

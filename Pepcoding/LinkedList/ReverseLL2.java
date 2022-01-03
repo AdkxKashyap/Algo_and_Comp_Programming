@@ -118,7 +118,6 @@ public class ReverseLL2 {
   }
 
   public void reverseLLL() {
-    System.out.println("test");
     if (size == 0) {
       System.out.println("Invalid size");
       return;

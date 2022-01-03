@@ -5,6 +5,8 @@ public class QueenCombination2D {
 
     public static void queensCombinations(int qpsf, int tq, boolean[][] chess, int row, int col){
         // write your code here
+        //level - queen, options - boxes
+
         if(qpsf == tq) {
           for(int i = 0; i < chess.length; i++) {
             for(int j = 0; j < chess.length; j++) {

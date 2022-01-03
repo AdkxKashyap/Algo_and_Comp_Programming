@@ -9,7 +9,7 @@ public class GeneralTree {
     ArrayList<Node> children;
 
     public Node() {
-      int data = 0;
+      this.data = 0;
       children = new ArrayList<>();
     }
 

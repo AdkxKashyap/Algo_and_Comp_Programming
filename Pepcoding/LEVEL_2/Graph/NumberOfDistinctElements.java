@@ -35,8 +35,9 @@ class Main {
         psf.append(s_dir[d]);
         dfs(arr, row, col, psf);
       }
-      psf.append("z");
+      
     }
+    psf.append("z");
   }
   public static StringBuilder psf ;
   public static int numDistinctIslands(int[][] arr) {

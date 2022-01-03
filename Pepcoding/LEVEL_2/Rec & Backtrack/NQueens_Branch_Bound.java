@@ -2,7 +2,9 @@ import java.util.*;
 public class NQueens_Branch_Bound {
   //optimize isValid code from O(4N) to O(1)
   public static boolean[] col ;
+  //right - left
   public static boolean[] nd;
+  //left - right diagonal
   public static boolean[] rd;
   //arrays reqd to check validity
   public static void nQueens(int row, int tq, String asf) {
@@ -13,7 +15,7 @@ public class NQueens_Branch_Bound {
     for(int c = 0; c < tq; c++) {
       if(isSafeToPlace(row, c)) {
         col[c] = true;
-        nd[row + c] = true;;
+        nd[row + c] = true;
         rd[row - c + col.length - 1] = true;
         nQueens(row + 1, tq, asf + "," + row + "-" + col);
         col[c] = false;

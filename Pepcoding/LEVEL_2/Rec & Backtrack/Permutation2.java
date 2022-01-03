@@ -3,11 +3,12 @@ import java.util.*;
 
 public class Permutation2 {
   //level->boxes, options-> choice of items
-  public static void permutations(int cb, int tb, int[] items, int ssf, int ts, String asf){
+  public static void permutations(int cb, int tb, int[] items, int ci, int ti, String asf){
     // write your code here
     //since init cb = 1 in main, so cb > tb if cb would have started frm 0 than check cb == tb
     if(cb > tb) {
-      if(ssf == ts) {
+      //curr item == tot item.i.e only when all items are placed in box print
+      if(ti == ci) {
         System.out.println(asf);
       }
       return;
@@ -16,7 +17,7 @@ public class Permutation2 {
     for(int i = 0; i < ts; i++) {
       if(items[i] == 0) {
         items[i] = 1;
-        permutations(cb + 1, tb, items, ssf + 1, ts, asf + (i+1));
+        permutations(cb + 1, tb, items, ti + 1, ci, asf + (i+1));
         items[i] = 0;
       }
     }
