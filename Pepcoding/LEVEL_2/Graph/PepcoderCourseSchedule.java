@@ -46,10 +46,12 @@ public class Main {
     int cn = 0;
     while(que.size() > 0) {
       int edge = que.removeFirst();
+      //add elem in order in which they were processed
       ans[cn] = edge;
       cn++;
       for(int nbr : graph.get(edge)) {
         indeg[nbr]--;
+        //no more dependencies so it can be processed
         if(indeg[nbr] == 0) {
           que.addLast(nbr);
         }

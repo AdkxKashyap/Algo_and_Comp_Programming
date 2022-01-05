@@ -13,11 +13,11 @@ class Solution {
     String src = "JFK";
     LinkedList<String> res = new LinkedList<>(); 
     dfs(graph, src, res);
-    List<Integer> ls= new LinkedList<>();
     return res;
   }
 
   public static void dfs(HashMap<String, PriorityQueue<String>> graph,String src, LinkedList<String> res) {
+    //removing from pq means removing that edge, here instead of marking vis vertices we mark edges.
     PriorityQueue<String> pq = graph.get(src);
     while(pq != null && pq.size() > 0) {
       String dest = pq.poll();
