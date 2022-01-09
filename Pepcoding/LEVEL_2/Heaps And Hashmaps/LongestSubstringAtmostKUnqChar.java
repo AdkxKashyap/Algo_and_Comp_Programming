@@ -1,10 +1,10 @@
-public class CountSubstringWIthKUnqChar {
-  long substrCount(String str, int k) {
-    // your code here
-    int[] map = new int[128];
+public class LongestSubstringAtmostKUnqChar {
+  public static int solution(String str, int k) {
+		// write your code here
+		int[] map = new int[128];
     int start = 0;
     int end = 0;
-    int res = 0;
+    int res = Integer.MIN_VALUE;
     int count = 0;
     for (char ch : str.toCharArray()) {
 
@@ -16,17 +16,16 @@ public class CountSubstringWIthKUnqChar {
 
       while (count > k) {
         // release
-        
         char cc = str.charAt(start);
         start++;
         map[cc]--;
         if (map[cc] == 0)
           count--;
       }
-        if(count == k)
-          res += end-start;
-      
+
+      res = Math.max(end - start, res);
+
     }
     return res == Integer.MIN_VALUE ? 0 : res;
-  }
+	}
 }

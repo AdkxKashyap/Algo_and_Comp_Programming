@@ -27,7 +27,8 @@ public class Main {
         if (map[cc] == 0)
           count--;
       }
-        res = Math.max(end - start, res);
+        if(count == k)
+          res = Math.max(end - start, res);
       
     }
     return res == Integer.MIN_VALUE ? 0 : res;
