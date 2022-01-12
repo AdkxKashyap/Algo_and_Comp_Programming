@@ -4,6 +4,7 @@ class NextGreater3 {
       String str = Integer.toString(n);
       char[] arr = str.toCharArray();
       int i = 0;
+      //find first smaller elem from left eg - 67598 -> 5 first smaller
       for(i = arr.length - 2; i >= 0; i--) {
           if(arr[i] < arr[i+1]) break;
       }
@@ -20,10 +21,12 @@ class NextGreater3 {
       arr[k] = tmp;
       
       String res = "";
+      //store from 0 to i
       for(int j = 0; j <= i; j++) {
           res += arr[j];
       }
       k = arr.length-1;
+      //store in reverse from k to i
       while(k > i) {
           res += arr[k];
           k--;
