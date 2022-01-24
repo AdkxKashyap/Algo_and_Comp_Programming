@@ -9,7 +9,7 @@ public class Main {
     int low = 0;
     int hi = n-1;
     while(low <= hi) {
-      int mid = (low + hi)/2;
+      int mid = low + (hi-low)/2;
       if(isBadVersion(mid)) {
         //go left
         hi = mid-1;
