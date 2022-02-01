@@ -40,6 +40,7 @@ class ImplementTrie {
         return false;
       cur = arr[ch - 'a'];
     }
+    //suppose we are searching for cat , but only cattle is present in that case this will return false.
     return cur.isEnd;
   }
 

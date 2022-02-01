@@ -1,19 +1,24 @@
-package Main.LEVEL_2.Arrays_Strings;
+import java.util.*;
+
 public class MeetingRooms2 {
-  public static boolean meetingRooms(int intervals[][]) {
-    // write code here
-    int start = intervals[0][0];
-    int end = intervals[0][1];
-    for (int j = 1; j < intervals.length; j++) {
-      int st = intervals[j][0];
-      int en = intervals[j][1];
-      if (st <= end) {
-        return false;
+  public static int meetingRooms(int intervals[][]) {
+    // write your code here
+    if(intervals.length == 0) return 0;
+    Arrays.sort(intervals, (a, b) ->  a[1]-b[1]);
+    PriorityQueue<Integer> pq = new PriorityQueue<>();
+    //add first meeting
+    pq.add(intervals[0][1]);
+
+    for(int i = 0; i < intervals.length; i++) {
+      if(pq.peek() > intervals[i][0]) {
+        //we need a new room
+        pq.add(intervals[i][1]);
       } else {
-        start = st;
-        end = en;
+        //add meeting in an existing room
+        pq.poll();
+        pq.add(intervals[i][1]);
       }
     }
-    return true;
+    return pq.size();
   }
 }

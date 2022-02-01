@@ -1,34 +1,29 @@
 class Solution
 {
-    public static ArrayList<Integer> square (int arr[], int n) {
-        //Complete the function
-        int max = Integer.MIN_VALUE;
-        int cnt = 0;
-        ArrayList<Integer> res = new ArrayList<>();
-        HashMap<Integer, Integer> hmap = new HashMap<>();
+    public static int shouldPunish (int roll[], int marks[], int n, double avg)
+    {
+        // your code here
+        //1. - Find total swaps Require using bubble sort.We need to find total swaps not nim swaps
+        int swaps = findSwaps(roll, n);
+        //2. - Sum(Marks of all stds) - total swaps
+        int sum = 0;
         for(int i = 0; i < n; i++) {
-            if(!hmap.containsKey(arr[i])) {
-                hmap.put(arr[i], 1);
-            } else {
-                hmap.put(arr[i], hmap.get(arr[i]) + 1);
-            }
+          sum += marks[i];
         }
-        for(int val : hmap.keySet()) {
-            int sticks = hmap.get(val);
-            if(sticks >= 4) {
-                int area = val*val;
-                if(max < area) {
-                    max = area;
-                    cnt = sticks/4;
-                }
-            };
+        //3. - Find Avg
+        int nmarks = sum - swaps;
+        if(nmarks*1.0/n > avg) return 1;
+        else return 0;
+    }
+    public static int findSwaps(int[] arr, int n) {
+      int cnt = 0;
+      for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n-i-1; j++) {
+          if(arr[j] > arr[j+1]) {
+            cnt++;
+          }
         }
-        if(max == Integer.MIN_VALUE) {
-            res.add(-1);
-            return res;
-        }
-        res.add(max);
-        res.add(cnt);
-        return res;
+      }
+      return cnt;
     }
 }

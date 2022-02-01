@@ -13,6 +13,7 @@ public class MinDominoRotation {
         //make top val1
         if(tops[i] != val1 && count1 != Integer.MAX_VALUE) {
             if(bottoms[i] == val1)count1++;
+            //if both top and bottom values are not val1 we cannot make row with equal values.
             else count1 = Integer.MAX_VALUE;
             //make top val2
         } if(tops[i] != val2 && count2 != Integer.MAX_VALUE) {

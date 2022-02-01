@@ -4,7 +4,7 @@ import java.io.*;
 public class Main {
   public static int largestPerimeter(int[]nums) {
     //write your code here
-    //s1 + s2 > s3, s2 + s3 > s1, s1 + s3 > s2, in sorted arr s1<s2<s3 so only find s1+s2<s3
+    //s1 + s2 > s3, s2 + s3 > s1, s1 + s3 > s2, in sorted arr s1<s2<s3 so only find s1+s2>s3
     Arrays.sort(nums);
     int n = nums.length;
     for(int i = n-3; i >= 0; i--) {

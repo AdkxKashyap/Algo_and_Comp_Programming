@@ -5,7 +5,7 @@ public class InsertInterval {
   public int[][] insert(int[][] intervals, int[] newInterval) {
     ArrayList<int[]> res = new ArrayList<>();
     int i = 0;
-    //adding all interval to res starting before new interval
+    //adding all interval to res starting and ending before new interval
     while(i < intervals.length && intervals[i][1] < newInterval[0]) {
       res.add(new int[]{intervals[i][0], intervals[i][1]});
       i++;

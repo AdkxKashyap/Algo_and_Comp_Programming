@@ -30,6 +30,11 @@ class Solution {
   }
   public  void dfs(Node root) {
     for(Node child : root.children) {
+      /**if child.str exists in arr only than proceed further
+       * eg - [c, ca, cat, bat]-> cat
+       *  when dfs reaches b , b.isend = false so dfs will not proceed further
+      */
+      
       if(child != null && child.str != null) {
         if(child.str.length() > ans.length()) {
           ans = child.str;

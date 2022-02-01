@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+//https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
 public class Main {
     public static int findSmallestDivisor(int[]nums,int th) {
         //write your code here
