@@ -4,7 +4,9 @@ import java.util.*;
 
 public class PartitionSubsets {
   public static int count(int n, int k, int[][] dp) {
+    //no of digits
     for(int i = 0; i <= n; i++) {
+      //no of subsets
       for(int j = 0; j <= k; j++) {
         if(i == j) {
           dp[i][j] = 1;
