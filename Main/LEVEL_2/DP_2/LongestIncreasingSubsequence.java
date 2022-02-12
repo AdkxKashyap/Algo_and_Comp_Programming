@@ -14,14 +14,14 @@ public class LongestIncreasingSubsequence {
         System.out.println(lengthOfLIS(arr));
     }
 
-    public int lengthOfLIS(int[] nums) {
+    public static int lengthOfLIS(int[] nums) {
         int omax = Integer.MIN_VALUE;
         int[] dp = new int[nums.length];
         dp[0] = 1;
         for(int i = 1; i < nums.length; i++) {
             int max = Integer.MIN_VALUE;
             for(int j = 0; j < i; j++) {
-                if(arr[j] < nums[i]) {
+                if(nums[j] < nums[i]) {
                     max = Math.max(dp[j], max);
                 }
             }

@@ -27,7 +27,7 @@ public class NxtSmallElemLeft {
   public static int[] solve(int[] arr) {
     int[] res=new int[arr.length];
     Stack<Integer> stk=new Stack<>();
-    stk.push(arr.length-1)
+    stk.push(arr.length-1);
     for(int i=arr.length-2;i>0;i--){
       while(stk.size()>0 && arr[i]<arr[stk.peek()]){
         res[stk.pop()]=arr[i];
