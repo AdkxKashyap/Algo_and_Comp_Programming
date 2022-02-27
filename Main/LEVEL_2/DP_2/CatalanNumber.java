@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// Unique BST, Valleys adn mountains Count brackets use the same code. See Notes
+// Unique BST, Valleys adn mountains Count brackets, Triangulation use the same code. See Notes
 public class CatalanNumber {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
